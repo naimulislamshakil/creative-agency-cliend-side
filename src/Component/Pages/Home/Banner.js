@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div class="hero min-h-screen bg-primary mt-2">
       <div class="hero-content flex-col lg:flex-row-reverse">
-        <img src={banner} class="max-w-sm" alt="" />
+        <img src={banner} class="max-w-sm w-3/4" alt="" />
         <div>
           <h1 class="text-5xl font-bold">Box Office News!</h1>
           <p class="py-6">
