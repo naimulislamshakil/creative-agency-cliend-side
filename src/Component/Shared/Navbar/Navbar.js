@@ -1,16 +1,62 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../../images/logos/logo.png";
 
 const Navbar = () => {
   const navItem = (
     <>
       <li>
-        <Link to="/">Home</Link>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          Our Portfolio
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          Our Team
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          Contact Us
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          LogIn
+        </Link>
+      </li>
+      <li>
+        <Link
+          className="font-bold text-md hover:bg-secondary hover:text-white"
+          to="/"
+        >
+          Register
+        </Link>
       </li>
     </>
   );
   return (
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-primary">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -36,8 +82,8 @@ const Navbar = () => {
             {navItem}
           </ul>
         </div>
-        <Link to="/" class="btn btn-ghost normal-case text-xl">
-          daisyUI
+        <Link to="/" class="ml-14 normal-case text-xl">
+          <img className="w-1/4 " src={logo} alt="" />
         </Link>
       </div>
       <div class="navbar-center hidden lg:flex">
