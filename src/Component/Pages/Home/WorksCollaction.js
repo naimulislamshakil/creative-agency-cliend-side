@@ -4,22 +4,23 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./Home.css";
 import { Navigation } from "swiper";
-import Service from "./Service";
+import WorkCollactionCard from "./WorkCollactionCard";
 
-const AwesomeService = () => {
-  const [service, setService] = useState([]);
+const WorksCollaction = () => {
+  const [imgs, setImg] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("http://localhost:5000/works")
       .then((res) => res.json())
-      .then((data) => setService(data));
+      .then((data) => setImg(data));
   }, []);
   return (
-    <div>
+    <div className="mt-5">
       <div class="divider"></div>
       <div>
         <h2 className="text-2xl font-bold text-center">
-          Provide awesome <span className="text-accent">services</span>
+          Here are some of
+          <span className="text-accent"> our works</span>
         </h2>
       </div>
       <div class="divider"></div>
@@ -31,9 +32,12 @@ const AwesomeService = () => {
           slidesPerView={2}
         >
           <div className="py-5">
-            {service.map((s) => (
+            {imgs.map((img) => (
               <SwiperSlide>
-                <Service key={s._id} service={s}></Service>
+                <WorkCollactionCard
+                  key={img._id}
+                  img={img}
+                ></WorkCollactionCard>
               </SwiperSlide>
             ))}
           </div>
@@ -43,4 +47,4 @@ const AwesomeService = () => {
   );
 };
 
-export default AwesomeService;
+export default WorksCollaction;
