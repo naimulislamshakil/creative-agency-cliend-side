@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-import "./Home.css";
-import { Navigation } from "swiper";
+import "swiper/css/pagination";
+
+import "./WorkCollaction.css";
+
+// import required modules
+import { Pagination } from "swiper";
+
 import WorkCollactionCard from "./WorkCollactionCard";
 
 const WorksCollaction = () => {
@@ -24,25 +30,18 @@ const WorksCollaction = () => {
         </h2>
       </div>
       <div class="divider"></div>
-      <div className="bg-base-300">
-        <Swiper
-          navigation={true}
-          modules={[Navigation]}
-          className="mySwiper"
-          slidesPerView={2}
-        >
-          <div className="py-5">
-            {imgs.map((img) => (
-              <SwiperSlide>
-                <WorkCollactionCard
-                  key={img._id}
-                  img={img}
-                ></WorkCollactionCard>
-              </SwiperSlide>
-            ))}
-          </div>
-        </Swiper>
-      </div>
+
+      <Swiper
+        pagination={true}
+        modules={[Pagination]}
+        className="mySwiper my-5 bg-base-200"
+      >
+        {imgs.map((img) => (
+          <SwiperSlide className="my-8">
+            <WorkCollactionCard key={img._id} img={img}></WorkCollactionCard>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </div>
   );
 };

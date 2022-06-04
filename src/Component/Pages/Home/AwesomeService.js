@@ -27,16 +27,14 @@ const AwesomeService = () => {
         <Swiper
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
+          className="mySwiper py-5"
           slidesPerView={2}
         >
-          <div className="py-5">
-            {service.map((s) => (
-              <SwiperSlide>
-                <Service key={s._id} service={s}></Service>
-              </SwiperSlide>
-            ))}
-          </div>
+          {service.map((s) => (
+            <SwiperSlide>
+              <Service key={s._id} service={s}></Service>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
