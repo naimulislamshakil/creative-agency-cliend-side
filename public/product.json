@@ -1,15 +1,24 @@
 [
   {
-    "img": "https://i.ibb.co/z2N0y7B/carousel-1.png"
+    "img": "https://i.ibb.co/j8R1M7q/customer-1.png",
+    "position": "CEO",
+    "company": "Manpol",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+    "name": "Nash Patrik"
   },
   {
-    "img": "https://i.ibb.co/JxP1XbT/carousel-2.png"
+    "img": "https://i.ibb.co/WHgTFpz/customer-2.png",
+    "position": "CEO",
+    "company": "Manpol",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+    "name": "Miriam Barron"
   },
 
   {
-    "img": "https://i.ibb.co/sRM0SG3/carousel-4.png"
-  },
-  {
-    "img": "https://i.ibb.co/7S5sQJf/carousel-5.png"
+    "img": "https://i.ibb.co/NmYJmGr/customer-3.png",
+    "position": "CEO",
+    "company": "Manpol",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus commodo ipsum duis laoreet maecenas. Feugiat ",
+    "name": "Bria Malone"
   }
 ]

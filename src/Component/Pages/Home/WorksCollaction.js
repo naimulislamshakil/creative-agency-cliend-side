@@ -34,7 +34,7 @@ const WorksCollaction = () => {
       <Swiper
         pagination={true}
         modules={[Pagination]}
-        className="mySwiper my-5 bg-base-200"
+        className="mySwiper my-5 bg-black"
         breakpoints={{
           0: {
             slidesPerView: 1,
