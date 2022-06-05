@@ -1,4 +1,15 @@
 import React, { useEffect, useState } from "react";
+import ReviewCard from "./ReviewCard";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+import "./WorkCollaction.css";
+
+// import required modules
+import { Pagination } from "swiper";
 
 const Review = () => {
   const [reviews, setReview] = useState([]);
@@ -18,6 +29,20 @@ const Review = () => {
         </h2>
       </div>
       <div class="divider"></div>
+      <div>
+        <Swiper
+          pagination={true}
+          modules={[Pagination]}
+          className="mySwiper my-5 bg-base-200"
+          slidesPerView="1"
+        >
+          {reviews.map((r) => (
+            <SwiperSlide>
+              <ReviewCard key={r._id} review={r}></ReviewCard>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
