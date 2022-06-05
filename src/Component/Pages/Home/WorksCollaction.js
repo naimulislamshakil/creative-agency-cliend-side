@@ -35,6 +35,20 @@ const WorksCollaction = () => {
         pagination={true}
         modules={[Pagination]}
         className="mySwiper my-5 bg-base-200"
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {imgs.map((img) => (
           <SwiperSlide className="my-8">

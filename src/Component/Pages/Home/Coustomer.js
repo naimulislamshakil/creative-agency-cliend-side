@@ -9,12 +9,12 @@ const Coustomer = () => {
   return (
     <div>
       <div class="divider"></div>
-      <div className=" text-center bg-white grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 justify-center py-5 w-full items-center">
-        <img className="w-3/4 mt-2" src={sl} alt="" />
-        <img className="w-3/4 mt-2" src={google} alt="" />
-        <img className="w-3/4 mt-2" src={uber} alt="" />
-        <img className="w-3/4 mt-2" src={netflix} alt="" />
-        <img className="w-3/4 mt-2" src={airbnb} alt="" />
+      <div className="mx-auto bg-white grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 justify-center py-5 w-full items-center">
+        <img className="w-3/4 mt-2 mx-auto" src={sl} alt="" />
+        <img className="w-3/4 mt-4 mx-auto" src={google} alt="" />
+        <img className="w-3/4 mt-2 mx-auto" src={uber} alt="" />
+        <img className="w-3/4 mt-2 mx-auto" src={netflix} alt="" />
+        <img className="w-3/4 mt-2 mx-auto" src={airbnb} alt="" />
       </div>
       <div class="divider"></div>
     </div>

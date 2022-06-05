@@ -28,7 +28,16 @@ const AwesomeService = () => {
           navigation={true}
           modules={[Navigation]}
           className="mySwiper py-5"
-          slidesPerView={2}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
+          }}
         >
           {service.map((s) => (
             <SwiperSlide>
