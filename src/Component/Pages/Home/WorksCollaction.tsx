@@ -22,14 +22,14 @@ const WorksCollaction = () => {
   }, []);
   return (
     <div className="mt-5">
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div>
         <h2 className="text-2xl font-bold text-center">
           Here are some of
           <span className="text-accent"> our works</span>
         </h2>
       </div>
-      <div class="divider"></div>
+      <div className="divider"></div>
 
       <Swiper
         pagination={true}

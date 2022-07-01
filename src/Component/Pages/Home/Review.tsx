@@ -21,14 +21,14 @@ const Review = () => {
   }, []);
   return (
     <div className="mt-5">
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div>
         <h2 className="text-2xl font-bold text-center">
           Clients
           <span className="text-accent"> Feedback</span>
         </h2>
       </div>
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div>
         <Swiper
           pagination={true}

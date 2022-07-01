@@ -16,13 +16,13 @@ const AwesomeService = () => {
   }, []);
   return (
     <div>
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div>
         <h2 className="text-2xl font-bold text-center">
           Provide awesome <span className="text-accent">services</span>
         </h2>
       </div>
-      <div class="divider"></div>
+      <div className="divider"></div>
       <div className="bg-base-300">
         <Swiper
           navigation={true}
