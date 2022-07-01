@@ -11,9 +11,10 @@ import "./WorkCollaction.css";
 import { Pagination } from "swiper";
 
 import WorkCollactionCard from "./WorkCollactionCard";
+import AwesomeServiceDe from "../../Type/models";
 
 const WorksCollaction = () => {
-  const [imgs, setImg] = useState([]);
+  const [imgs, setImg] = useState<AwesomeServiceDe[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/works")
@@ -52,7 +53,7 @@ const WorksCollaction = () => {
       >
         {imgs.map((img) => (
           <SwiperSlide className="my-8">
-            <WorkCollactionCard key={img._id} img={img}></WorkCollactionCard>
+            <WorkCollactionCard key={img._id} image={img}></WorkCollactionCard>
           </SwiperSlide>
         ))}
       </Swiper>

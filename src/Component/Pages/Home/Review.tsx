@@ -10,9 +10,10 @@ import "./WorkCollaction.css";
 
 // import required modules
 import { Pagination } from "swiper";
+import AwesomeServiceDe from "../../Type/models";
 
 const Review = () => {
-  const [reviews, setReview] = useState([]);
+  const [reviews, setReview] = useState<AwesomeServiceDe[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/tastmonial")
@@ -34,7 +35,7 @@ const Review = () => {
           pagination={true}
           modules={[Pagination]}
           className="mySwiper my-5 bg-base-200"
-          slidesPerView="1"
+          slidesPerView={1}
         >
           {reviews.map((r) => (
             <SwiperSlide>

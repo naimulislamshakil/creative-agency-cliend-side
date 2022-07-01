@@ -5,9 +5,10 @@ import "swiper/css/navigation";
 import "./Home.css";
 import { Navigation } from "swiper";
 import Service from "./Service";
+import AwesomeServiceDe from "../../Type/models";
 
 const AwesomeService = () => {
-  const [service, setService] = useState([]);
+  const [service, setService] = useState<AwesomeServiceDe[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/service")
