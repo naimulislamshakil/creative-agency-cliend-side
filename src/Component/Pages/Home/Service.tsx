@@ -1,6 +1,10 @@
 import React from "react";
+import AwesomeServiceDe from "../../Type/models";
 
-const Service = ({ service }) => {
+type ServiceDetils = {
+  service: AwesomeServiceDe;
+};
+const Service = ({ service }: ServiceDetils) => {
   const { img, titel, text } = service;
   return (
     <div>

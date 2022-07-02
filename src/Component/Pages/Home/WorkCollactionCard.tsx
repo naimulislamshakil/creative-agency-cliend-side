@@ -1,10 +1,10 @@
-import React, { FC } from "react";
-import AwesomeServiceDe from "../../Type/models";
+import React from "react";
+import CollactionDetils from "../../Type/models3";
 
 interface ImageType {
-  image: AwesomeServiceDe;
+  image: CollactionDetils;
 }
-const WorkCollactionCard: FC<ImageType> = ({ image }) => {
+const WorkCollactionCard = ({ image }: ImageType) => {
   const { img } = image;
   return (
     <div className="card w-80  bg-base-100 shadow-2xl">

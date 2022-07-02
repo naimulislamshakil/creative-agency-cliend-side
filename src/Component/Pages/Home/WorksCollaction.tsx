@@ -11,10 +11,10 @@ import "./WorkCollaction.css";
 import { Pagination } from "swiper";
 
 import WorkCollactionCard from "./WorkCollactionCard";
-import AwesomeServiceDe from "../../Type/models";
+import CollactionDetils from "../../Type/models3";
 
 const WorksCollaction = () => {
-  const [imgs, setImg] = useState<AwesomeServiceDe[]>([]);
+  const [imgs, setImg] = useState<CollactionDetils[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/works")

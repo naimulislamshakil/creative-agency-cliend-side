@@ -10,10 +10,10 @@ import "./WorkCollaction.css";
 
 // import required modules
 import { Pagination } from "swiper";
-import AwesomeServiceDe from "../../Type/models";
+import ReviewDetils from "../../Type/models2";
 
 const Review = () => {
-  const [reviews, setReview] = useState<AwesomeServiceDe[]>([]);
+  const [reviews, setReview] = useState<ReviewDetils[]>([]);
 
   useEffect(() => {
     fetch("http://localhost:5000/tastmonial")

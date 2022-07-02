@@ -1,6 +1,9 @@
 import React from "react";
-
-const ReviewCard = ({ review }) => {
+import ReviewDetils from "../../Type/models2";
+interface ReviewName {
+  review: ReviewDetils;
+}
+const ReviewCard = ({ review }: ReviewName) => {
   const { img, position, company, text, name } = review;
   return (
     <div>
